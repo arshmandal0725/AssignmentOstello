@@ -7,12 +7,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ostello/screens/account_screen.dart';
+import 'package:ostello/screens/parent_screen.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const AccountScreen());
+    await tester.pumpWidget(const ParentScreen());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

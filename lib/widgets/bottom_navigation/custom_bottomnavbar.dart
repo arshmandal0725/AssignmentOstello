@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:ostello/constant.dart';
-import 'package:ostello/widgets/accountscreen_widgets/bottom_nav_iconlabel.dart';
+import 'package:ostello/widgets/bottom_navigation/bottom_nav_iconlabel.dart';
 
-class CustomBottomnavbar extends StatelessWidget {
+class CustomBottomnavbar extends StatefulWidget {
   const CustomBottomnavbar({super.key});
 
+  @override
+  State<CustomBottomnavbar> createState() => _CustomBottomnavbarState();
+}
+
+class _CustomBottomnavbarState extends State<CustomBottomnavbar> {
   @override
   Widget build(BuildContext context) {
     return Container(

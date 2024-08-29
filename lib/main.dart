@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ostello/screens/account_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ostello/screens/parent_screen.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: AccountScreen(),
-  ));
+  runApp(
+    const ProviderScope(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: ParentScreen(),
+      ),
+    ),
+  );
 }
